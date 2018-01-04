@@ -9,7 +9,7 @@ import dagger.Component;
 import dagger.android.AndroidInjector;
 import dagger.android.DaggerApplication;
 import dagger.android.support.AndroidSupportInjectionModule;
-import iammert.com.dagger_android_injection.AndroidSampleApp;
+import iammert.com.dagger_android_injection.AndroidApp;
 
 /**
  * Created by mertsimsek on 25/05/2017.
@@ -21,7 +21,7 @@ import iammert.com.dagger_android_injection.AndroidSampleApp;
         ActivityBuilder.class})
 public interface AppComponent extends AndroidInjector<DaggerApplication> {
 
-    void inject(AndroidSampleApp app);
+    void inject(AndroidApp app);
 
     @Override
     void inject(DaggerApplication instance);

@@ -1,4 +1,4 @@
-package iammert.com.dagger_android_injection.ui.detail;
+package iammert.com.dagger_android_injection.ui.config;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -7,7 +7,7 @@ import javax.inject.Inject;
 
 import dagger.android.support.DaggerAppCompatActivity;
 import iammert.com.dagger_android_injection.R;
-import iammert.com.dagger_android_injection.ui.detail.fragment.ConfigFragment;
+import iammert.com.dagger_android_injection.ui.config.fragment.ConfigFragment;
 
 /**
  * Created by mertsimsek on 25/05/2017.
@@ -16,13 +16,13 @@ import iammert.com.dagger_android_injection.ui.detail.fragment.ConfigFragment;
 public class ConfigActivity extends DaggerAppCompatActivity implements ConfigView {
 
     @Inject
-    ConfigPresenter detailPresenter;
+    ConfigPresenter ConfigPresenter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_detail);
-        detailPresenter.loadDetail();
+        setContentView(R.layout.activity_configl);
+        ConfigPresenter.loadConfig();
 
         if (savedInstanceState == null)
             getSupportFragmentManager()
@@ -32,8 +32,8 @@ public class ConfigActivity extends DaggerAppCompatActivity implements ConfigVie
     }
 
     @Override
-    public void onDetailLoaded() {
-        Log.v("TEST", "Detail is loaded");
+    public void onConfigLoaded() {
+        Log.v("TEST", "Config is loaded");
     }
 
 }

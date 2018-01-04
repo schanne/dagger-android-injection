@@ -1,4 +1,4 @@
-package iammert.com.dagger_android_injection.ui.detail.fragment;
+package iammert.com.dagger_android_injection.ui.config.fragment;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -19,7 +19,7 @@ import dagger.android.support.DaggerFragment;
 public class ConfigFragment extends DaggerFragment implements ConfigFragmentView {
 
     @Inject
-    ConfigFragmentPresenter detailFragmentPresenter;
+    ConfigFragmentPresenter ConfigFragmentPresenter;
 
     public static ConfigFragment newInstance() {
         Bundle args = new Bundle();
@@ -40,7 +40,7 @@ public class ConfigFragment extends DaggerFragment implements ConfigFragmentView
     }
 
     @Override
-    public void onDetailFragmentLoaded() {
-        Log.v("TEST", "OnDetailFragmentLoaded.");
+    public void onConfigFragmentLoaded() {
+        Log.v("TEST", "OnConfigFragmentLoaded.");
     }
 }

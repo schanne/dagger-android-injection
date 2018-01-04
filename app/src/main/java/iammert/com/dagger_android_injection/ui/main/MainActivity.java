@@ -9,7 +9,7 @@ import javax.inject.Inject;
 
 import dagger.android.support.DaggerAppCompatActivity;
 import iammert.com.dagger_android_injection.R;
-import iammert.com.dagger_android_injection.ui.detail.ConfigActivity;
+import iammert.com.dagger_android_injection.ui.config.ConfigActivity;
 
 public class MainActivity extends DaggerAppCompatActivity implements MainView {
 

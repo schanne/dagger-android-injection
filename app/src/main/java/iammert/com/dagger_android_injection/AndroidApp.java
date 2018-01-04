@@ -10,8 +10,7 @@ import iammert.com.dagger_android_injection.di.DaggerAppComponent;
  * Created by mertsimsek on 25/05/2017.
  */
 
-public class AndroidSampleApp extends DaggerApplication {
-
+public class AndroidApp extends DaggerApplication {
 
     protected AndroidInjector<? extends DaggerApplication> applicationInjector() {
         AppComponent appComponent = DaggerAppComponent.builder().application(this).build();

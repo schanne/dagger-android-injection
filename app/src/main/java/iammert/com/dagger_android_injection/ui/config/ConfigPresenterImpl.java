@@ -1,4 +1,4 @@
-package iammert.com.dagger_android_injection.ui.detail;
+package iammert.com.dagger_android_injection.ui.config;
 
 import javax.inject.Inject;
 
@@ -19,8 +19,8 @@ public class ConfigPresenterImpl implements ConfigPresenter{
         this.apiService = apiService;
     }
 
-    public void loadDetail(){
+    public void loadConfig(){
         apiService.loadData();
-        configView.onDetailLoaded();
+        configView.onConfigLoaded();
     }
 }
