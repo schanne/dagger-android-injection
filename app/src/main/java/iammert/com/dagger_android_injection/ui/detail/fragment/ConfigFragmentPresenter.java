@@ -6,12 +6,12 @@ import javax.inject.Inject;
  * Created by mertsimsek on 02/06/2017.
  */
 
-public class DetailFragmentPresenter {
+public class ConfigFragmentPresenter {
 
-    DetailFragmentView detailFragmentView;
+    ConfigFragmentView detailFragmentView;
 
     @Inject
-    public DetailFragmentPresenter(DetailFragmentView detailFragmentView) {
+    public ConfigFragmentPresenter(ConfigFragmentView detailFragmentView) {
         this.detailFragmentView = detailFragmentView;
         detailFragmentView.onDetailFragmentLoaded();
     }

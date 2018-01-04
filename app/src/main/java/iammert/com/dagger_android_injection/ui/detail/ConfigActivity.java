@@ -7,16 +7,16 @@ import javax.inject.Inject;
 
 import dagger.android.support.DaggerAppCompatActivity;
 import iammert.com.dagger_android_injection.R;
-import iammert.com.dagger_android_injection.ui.detail.fragment.DetailFragment;
+import iammert.com.dagger_android_injection.ui.detail.fragment.ConfigFragment;
 
 /**
  * Created by mertsimsek on 25/05/2017.
  */
 
-public class DetailActivity extends DaggerAppCompatActivity implements DetailView {
+public class ConfigActivity extends DaggerAppCompatActivity implements ConfigView {
 
     @Inject
-    DetailPresenter detailPresenter;
+    ConfigPresenter detailPresenter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +27,7 @@ public class DetailActivity extends DaggerAppCompatActivity implements DetailVie
         if (savedInstanceState == null)
             getSupportFragmentManager()
                     .beginTransaction()
-                    .add(R.id.container, DetailFragment.newInstance())
+                    .add(R.id.container, ConfigFragment.newInstance())
                     .commitAllowingStateLoss();
     }
 

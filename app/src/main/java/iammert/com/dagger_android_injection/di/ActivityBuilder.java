@@ -2,9 +2,9 @@ package iammert.com.dagger_android_injection.di;
 
 import dagger.Module;
 import dagger.android.ContributesAndroidInjector;
-import iammert.com.dagger_android_injection.ui.detail.DetailActivity;
-import iammert.com.dagger_android_injection.ui.detail.DetailActivityModule;
-import iammert.com.dagger_android_injection.ui.detail.DetailFragmentProvider;
+import iammert.com.dagger_android_injection.ui.detail.ConfigFragmentProvider;
+import iammert.com.dagger_android_injection.ui.detail.ConfigActivity;
+import iammert.com.dagger_android_injection.ui.detail.ConfigActivityModule;
 import iammert.com.dagger_android_injection.ui.main.MainActivity;
 import iammert.com.dagger_android_injection.ui.main.MainActivityModule;
 
@@ -17,7 +17,7 @@ public abstract class ActivityBuilder {
     @ContributesAndroidInjector(modules = MainActivityModule.class)
     abstract MainActivity bindMainActivity();
 
-    @ContributesAndroidInjector(modules = {DetailActivityModule.class, DetailFragmentProvider.class})
-    abstract DetailActivity bindDetailActivity();
+    @ContributesAndroidInjector(modules = {ConfigActivityModule.class, ConfigFragmentProvider.class})
+    abstract ConfigActivity bindDetailActivity();
 
 }

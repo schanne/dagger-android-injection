@@ -7,10 +7,10 @@ import dagger.Provides;
  * Created by mertsimsek on 02/06/2017.
  */
 @Module
-public class DetailFragmentModule {
+public class ConfigFragmentModule {
 
     @Provides
-    DetailFragmentView provideDetailFragmentView(DetailFragment detailFragment){
+    ConfigFragmentView provideDetailFragmentView(ConfigFragment detailFragment){
         return detailFragment;
     }
 

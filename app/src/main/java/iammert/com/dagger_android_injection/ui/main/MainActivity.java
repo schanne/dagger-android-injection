@@ -9,7 +9,7 @@ import javax.inject.Inject;
 
 import dagger.android.support.DaggerAppCompatActivity;
 import iammert.com.dagger_android_injection.R;
-import iammert.com.dagger_android_injection.ui.detail.DetailActivity;
+import iammert.com.dagger_android_injection.ui.detail.ConfigActivity;
 
 public class MainActivity extends DaggerAppCompatActivity implements MainView {
 
@@ -26,7 +26,7 @@ public class MainActivity extends DaggerAppCompatActivity implements MainView {
         findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, DetailActivity.class));
+                startActivity(new Intent(MainActivity.this, ConfigActivity.class));
             }
         });
     }

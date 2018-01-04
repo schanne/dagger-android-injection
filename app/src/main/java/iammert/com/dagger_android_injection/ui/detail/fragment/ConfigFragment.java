@@ -16,14 +16,14 @@ import dagger.android.support.DaggerFragment;
  * Created by mertsimsek on 02/06/2017.
  */
 
-public class DetailFragment extends DaggerFragment implements DetailFragmentView {
+public class ConfigFragment extends DaggerFragment implements ConfigFragmentView {
 
     @Inject
-    DetailFragmentPresenter detailFragmentPresenter;
+    ConfigFragmentPresenter detailFragmentPresenter;
 
-    public static DetailFragment newInstance() {
+    public static ConfigFragment newInstance() {
         Bundle args = new Bundle();
-        DetailFragment fragment = new DetailFragment();
+        ConfigFragment fragment = new ConfigFragment();
         fragment.setArguments(args);
         return fragment;
     }
