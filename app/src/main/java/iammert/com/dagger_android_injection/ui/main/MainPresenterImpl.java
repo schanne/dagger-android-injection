@@ -2,7 +2,7 @@ package iammert.com.dagger_android_injection.ui.main;
 
 import javax.inject.Inject;
 
-import iammert.com.dagger_android_injection.data.ApiService;
+import iammert.com.dagger_android_injection.data.ConfigModel;
 
 /**
  * Created by mertsimsek on 25/05/2017.
@@ -10,10 +10,10 @@ import iammert.com.dagger_android_injection.data.ApiService;
 
 public class MainPresenterImpl implements MainPresenter{
     MainView mainView;
-    ApiService apiService;
+    ConfigModel apiService;
 
     @Inject
-    public MainPresenterImpl(MainView mainView, ApiService apiService) {
+    public MainPresenterImpl(MainView mainView, ConfigModel apiService) {
         this.mainView = mainView;
         this.apiService = apiService;
     }

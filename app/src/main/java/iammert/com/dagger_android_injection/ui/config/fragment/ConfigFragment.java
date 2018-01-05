@@ -19,7 +19,7 @@ import dagger.android.support.DaggerFragment;
 public class ConfigFragment extends DaggerFragment implements ConfigFragmentView {
 
     @Inject
-    ConfigFragmentPresenter ConfigFragmentPresenter;
+    ConfigFragmentPresenter configFragmentPresenter;
 
     public static ConfigFragment newInstance() {
         Bundle args = new Bundle();

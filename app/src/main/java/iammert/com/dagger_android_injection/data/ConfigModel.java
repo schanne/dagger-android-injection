@@ -6,10 +6,10 @@ import javax.inject.Inject;
  * Created by mertsimsek on 26/05/2017.
  */
 
-public class ApiService {
+public class ConfigModel {
 
     @Inject
-    public ApiService() {
+    public ConfigModel() {
     }
 
     public void loadData(){

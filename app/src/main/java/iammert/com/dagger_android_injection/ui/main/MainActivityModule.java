@@ -3,7 +3,7 @@ package iammert.com.dagger_android_injection.ui.main;
 import dagger.Binds;
 import dagger.Module;
 import dagger.Provides;
-import iammert.com.dagger_android_injection.data.ApiService;
+import iammert.com.dagger_android_injection.data.ConfigModel;
 
 /**
  * Created by mertsimsek on 25/05/2017.
@@ -12,7 +12,7 @@ import iammert.com.dagger_android_injection.data.ApiService;
 public abstract class MainActivityModule {
 
     @Provides
-    static MainPresenter provideMainPresenter(MainView mainView, ApiService apiService) {
+    static MainPresenter provideMainPresenter(MainView mainView, ConfigModel apiService) {
         return new MainPresenterImpl(mainView, apiService);
     }
 

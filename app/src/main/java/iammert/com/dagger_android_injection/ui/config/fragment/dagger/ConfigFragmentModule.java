@@ -1,7 +1,9 @@
-package iammert.com.dagger_android_injection.ui.config.fragment;
+package iammert.com.dagger_android_injection.ui.config.fragment.dagger;
 
 import dagger.Module;
 import dagger.Provides;
+import iammert.com.dagger_android_injection.ui.config.fragment.ConfigFragment;
+import iammert.com.dagger_android_injection.ui.config.fragment.ConfigFragmentView;
 
 /**
  * Created by mertsimsek on 02/06/2017.

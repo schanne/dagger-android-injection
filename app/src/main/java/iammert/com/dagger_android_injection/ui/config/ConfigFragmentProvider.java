@@ -3,7 +3,7 @@ package iammert.com.dagger_android_injection.ui.config;
 import dagger.Module;
 import dagger.android.ContributesAndroidInjector;
 import iammert.com.dagger_android_injection.ui.config.fragment.ConfigFragment;
-import iammert.com.dagger_android_injection.ui.config.fragment.ConfigFragmentModule;
+import iammert.com.dagger_android_injection.ui.config.fragment.dagger.ConfigFragmentModule;
 
 /**
  * Created by mertsimsek on 02/06/2017.

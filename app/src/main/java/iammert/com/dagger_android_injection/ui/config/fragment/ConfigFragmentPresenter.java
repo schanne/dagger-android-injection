@@ -8,11 +8,11 @@ import javax.inject.Inject;
 
 public class ConfigFragmentPresenter {
 
-    ConfigFragmentView ConfigFragmentView;
+    ConfigFragmentView configFragmentView;
 
     @Inject
     public ConfigFragmentPresenter(ConfigFragmentView ConfigFragmentView) {
-        this.ConfigFragmentView = ConfigFragmentView;
+        this.configFragmentView = ConfigFragmentView;
         ConfigFragmentView.onConfigFragmentLoaded();
     }
 }

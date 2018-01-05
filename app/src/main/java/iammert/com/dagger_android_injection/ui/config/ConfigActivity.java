@@ -16,13 +16,13 @@ import iammert.com.dagger_android_injection.ui.config.fragment.ConfigFragment;
 public class ConfigActivity extends DaggerAppCompatActivity implements ConfigView {
 
     @Inject
-    ConfigPresenter ConfigPresenter;
+    ConfigPresenter configPresenter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_configl);
-        ConfigPresenter.loadConfig();
+        setContentView(R.layout.activity_config);
+        configPresenter.loadConfig();
 
         if (savedInstanceState == null)
             getSupportFragmentManager()
